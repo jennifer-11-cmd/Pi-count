@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.Affliate__registration {
+  background-image: url("bg.png");
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  column-gap: 10px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+.logo img {
+  width: 40px;
+}
+.registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.registration p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.registration button {
+  background-color: purple;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 0;
+  column-gap: 20px;
+}
+.registration button a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+.reg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reg h2 {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 30px;
+}
+.reg-join input {
+  margin-bottom: 10%;
+  width: 200px;
+  padding: 14px;
+  border: 1px solid purple;
+  background: transparent;
+  border-radius: 5px;
+  color: #fff;
+}
+.reg-btn {
+  background-color: purple;
+  width: 235px;
+  border: 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+.reg-btn a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+.navabar_menu {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 20%;
+  column-gap: 30px;
+  width: 100%;
+}
+.navbar_links {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: inline-flex;
+  color: #fff;
+}
+.ham {
+  display: none;
+  margin-left: 65%;
+  margin-top: 15px;
+}
+.main {
+  width: 100%;
+  height: 70vh;
+  /*background: url("BGaff.png");*/
+  background-image: -webkit-linear-gradient(purple, black, red);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main h1 {
+  color: purple;
+  font-size: 80px;
+}
+.main button {
+  background-color: purple;
+  border: 1px solid #fff;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
+}
+.about h1 {
+  margin-bottom: 30px;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
+}
+.services h1 {
+  margin-bottom: 30px;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
+}
+.order h1 {
+  margin-bottom: 30px;
+}
+.order-price {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+.fivekprice,
+.tenkprice,
+.twentykprice {
+  background-color: rgb(197, 8, 197);
+  height: 15%;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+.fivekprice button,
+.tenkprice button,
+.twentykprice button {
+  background-color: #fff;
+  border: 0;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.fivekprice a,
+.tenkprice a,
+.twentykprice a {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 740px) {
+  .main {
+    height: 40vh;
+  }
+  .main h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navabar_menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    height: 30vh;
+    padding-left: 30px;
+    line-height: 60px;
+    height: 50vh;
+  }
+  .ham {
+    display: block;
+  }
+  .line {
+    background-color: #fff;
+    width: 26px;
+    height: 4px;
+    display: block;
+    margin-top: 5px;
+    z-index: 99;
+  }
+  .main h1 {
+    padding-left: 20px;
+  }
+}
+.fk__payment {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background-color: purple;
+  padding: 15px;
+  border-radius: 20px;
+}
+.head {
+  background-image: -webkit-linear-gradient(rgb(197, 8, 197), rgb(155, 9, 155));
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 13px;
+  justify-content: center;
+  padding: 10px;
+}
+.body {
+  background-color: #eee9e9;
+  border-radius: 15px;
+  margin-top: 9px;
+  height: 300px;
+  padding: 20px 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.body p {
+  color: rgb(101, 98, 93);
+  margin-bottom: 15px;
+}
+.acc-details {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.payment-btn {
+  background-color: rgb(197, 8, 197);
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 15px;
+}
+.payment-btn a {
+  color: #fff;
+  text-decoration: none;
+}
