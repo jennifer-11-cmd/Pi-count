@@ -98,7 +98,7 @@
 .ham {
   display: none;
   margin-left: 65%;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 .main {
   width: 100%;
@@ -117,7 +117,7 @@
 }
 .main h1 {
   color: purple;
-  font-size: 80px;
+  font-size: 50px;
 }
 .main button {
   background-color: purple;
@@ -126,9 +126,11 @@
 .about {
   display: flex;
   flex-direction: column;
-  margin: 100px 100px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 30px;
   line-height: 25px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .about h1 {
   margin-bottom: 30px;
@@ -136,34 +138,36 @@
 .services {
   display: flex;
   flex-direction: column;
-  margin: 100px 100px;
+  margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
+  padding-bottom: 40px;
 }
 .services h1 {
   margin-bottom: 30px;
 }
 .order {
   display: flex;
-  flex-direction: column;
-  margin: 100px 150px;
+  margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
 }
 .order h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.order h2 {
+  margin-bottom: 10px;
 }
 .order-price {
+  display: flex;
   width: 100%;
-  display: inline-flex;
-  justify-content: center;
 }
 .fivekprice,
 .tenkprice,
 .twentykprice {
   background-color: rgb(197, 8, 197);
   height: 15%;
-  padding: 30px;
+  padding: 25px;
   margin-top: 30px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -190,9 +194,6 @@
   .main {
     height: 40vh;
   }
-  .main h1 {
-    font-size: 60px;
-  }
 }
 
 @media (max-width: 550px) {
@@ -213,13 +214,14 @@
   .line {
     background-color: #fff;
     width: 26px;
-    height: 4px;
+    height: 3px;
     display: block;
     margin-top: 5px;
     z-index: 99;
   }
   .main h1 {
     padding-left: 20px;
+    font-size: 40px;
   }
 }
 .fk__payment {
@@ -271,4 +273,17 @@
 .payment-btn a {
   color: #fff;
   text-decoration: none;
+}
+@media (max-width: 440px) {
+  .fk__payment {
+    width: 220px;
+  }
+  .registration {
+    width: 200px;
+  }
+}
+@media (max-width: 380px) {
+  .ham {
+    margin-left: 55%;
+  }
 }
