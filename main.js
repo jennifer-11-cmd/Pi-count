@@ -6,12 +6,10 @@ function dropDown() {
   } else {
     menu.style.display = "none";
   }
+  menu.addEventListener("click", () => {
+    menu.style.display = "none";
+  });
 }
-
-/*menu.addEventListener("click", () => {
-  menu.style.display = "none";
-});
-*/
 
 let vals = document.querySelectorAll(".num");
 let interval = 0;
