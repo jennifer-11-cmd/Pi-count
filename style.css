@@ -84,8 +84,8 @@
   display: flex;
   list-style: none;
   margin-top: 30px;
-  padding-left: 20%;
-  column-gap: 30px;
+  padding-left: 35%;
+  column-gap: 80px;
   width: 100%;
 }
 .navbar_links {
@@ -131,6 +131,7 @@
   padding-top: 30px;
   padding-bottom: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
 }
 .about h1 {
   margin-bottom: 30px;
@@ -142,6 +143,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
   padding-bottom: 40px;
+  font-size: 18px;
 }
 .services h1 {
   margin-bottom: 30px;
@@ -151,6 +153,7 @@
   margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
+  font-size: 18px;
 }
 .order h1 {
   margin-bottom: 20px;
@@ -279,11 +282,63 @@
     width: 220px;
   }
   .registration {
-    width: 200px;
+    width: 700px;
   }
 }
 @media (max-width: 380px) {
   .ham {
     margin-left: 55%;
   }
+}
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  align-items: center;
+}
+.f {
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.f input {
+  margin-bottom: 7px;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.f p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.p-countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container__Countdown {
+  width: 200min;
+  height: 300min;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 45px;
+  background-color: rgb(42, 40, 40);
+  border-bottom: 10px solid purple;
+  border-radius: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+span.num {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
+span.text {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px 0;
 }
