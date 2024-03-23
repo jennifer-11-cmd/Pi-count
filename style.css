@@ -279,10 +279,10 @@
 }
 @media (max-width: 440px) {
   .fk__payment {
-    width: 220px;
+    width: 270px;
   }
   .registration {
-    width: 700px;
+    width: 200px;
   }
 }
 @media (max-width: 380px) {
