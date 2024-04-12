@@ -298,6 +298,11 @@
   color: #fff;
   text-decoration: none;
 }
+@media (max-width: 540px) {
+  .side {
+    width: 200pxpx;
+  }
+}
 @media (max-width: 440px) {
   .fk__payment {
     width: 270px;
