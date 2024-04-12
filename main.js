@@ -15,7 +15,7 @@ let vals = document.querySelectorAll(".num");
 let interval = 0;
 
 vals.forEach((val) => {
-  let startValue = 5500;
+  let startValue = 3500;
   let endvalue = parseInt(val.getAttribute("data-val"));
   let duration = 1000;
   let counter = setInterval(function () {
