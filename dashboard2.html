@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashbord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .dash {
+            margin: 20px 0;
+            border: 0;
+            outline: 0;
+            width: 200px;
+            padding: 10px 0;
+            justify-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Advanced Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Monthly Sales</h2>
+            <canvas id="salesChart"></canvas>
+        </div>
+        <div class="card">
+            <h2>Website Traffic</h2>
+            <canvas id="trafficChart"></canvas>
+        </div>
+        <div class="card">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Product A</td>
+                        <td>John Doe</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Product B</td>
+                        <td>Jane Smith</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Product C</td>
+                        <td>Michael Johnson</td>
+                        <td>Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+    <button class="dash"><a href="dashboard.html">Head back to dashboard</a></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data for charts
+        const salesData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+            datasets: [{
+                label: 'Sales',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                data: [500, 700, 650, 800, 750, 900]
+            }]
+        };
+
+        const trafficData = {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [{
+                label: 'Visitors',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                data: [150, 200, 180, 220, 250, 300, 280]
+            }]
+        };
+
+        // Render charts using Chart.js
+        const salesChartCanvas = document.getElementById('salesChart').getContext('2d');
+        new Chart(salesChartCanvas, {
+            type: 'line',
+            data: salesData,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        const trafficChartCanvas = document.getElementById('trafficChart').getContext('2d');
+        new Chart(trafficChartCanvas, {
+            type: 'bar',
+            data: trafficData,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

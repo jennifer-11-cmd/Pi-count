@@ -369,3 +369,43 @@ span.text {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.sidebar {
+  width: 100%;
+}
+.side {
+  width: 300px;
+  height: 90vh;
+  background-color: purple;
+  border-radius: 10px;
+  margin: 30px 0;
+  color: #fff;
+}
+.logo-name {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.con {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.con ul {
+  justify-content: center;
+  list-style: none;
+  margin-left: 100px;
+  line-height: 100px;
+}
+.con ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+#value {
+  color: #fff;
+  margin: 10px 30px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
