@@ -13,16 +13,17 @@ function dropDown() {
 
 let vals = document.querySelectorAll(".num");
 let interval = 0;
-let val = localStorage.getItem("val");
 
 vals.forEach((val) => {
   let startValue = 3500;
   let endvalue = parseInt(val.getAttribute("data-val"));
   let duration = 1000;
   let counter = setInterval(function () {
-    counter = localStorage.setItem("val", val);
+    startValue = localStorage.getItem("startValue");
+    startValue = parseInt(startValue); // because localstorage stores everything in strings
     startValue += 1;
     val.textContent = startValue;
+    localStorage.setItem("startValue", startValue);
 
     if (startValue == endvalue) {
       clearInterval(counter);
