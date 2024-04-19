@@ -16,7 +16,7 @@
 <body>
     <div class="p-countdown">
         <div class="container__Countdown">
-            <span class="num" data-val="50000">000</span>
+            <span class="num" data-val="10500">000</span>
             <span class="text">Mining</span>
         </div>
     </div>
@@ -30,6 +30,7 @@
 
 
 <script>
+
     let vals = document.querySelectorAll(".num");
     let interval = 0;
 
@@ -38,13 +39,18 @@
         let endvalue = parseInt(val.getAttribute("data-val"));
         let duration = 1000;
         let counter = setInterval(function () {
+            //startValue = localStorage.getItem("startValue");
+            //startValue = parseInt(startValue); // because localstorage stores everything in strings
             startValue += 1;
             val.textContent = startValue;
+            localStorage.setItem("startValue", startValue);
+
             if (startValue == endvalue) {
                 clearInterval(counter);
             }
         }, duration);
     });
+
 
 
 </script>

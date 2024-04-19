@@ -29,4 +29,26 @@
 </html>
 
 
-<script src="main.js"></script>
+<script>
+
+    let vals = document.querySelectorAll(".num");
+    let interval = 0;
+
+    vals.forEach((val) => {
+        let startValue = 3500;
+        let endvalue = parseInt(val.getAttribute("data-val"));
+        let duration = 1000;
+        let counter = setInterval(function () {
+            //startValue = localStorage.getItem("startValue");
+            //startValue = Math.floor(startValue); // because localstorage stores everything in strings
+            startValue += 1;
+            val.textContent = startValue;
+            localStorage.setItem("startValue", startValue);
+
+            if (startValue == endvalue) {
+                clearInterval(counter);
+            }
+        }, duration);
+    });
+
+</script>

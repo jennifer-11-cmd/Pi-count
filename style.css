@@ -57,12 +57,13 @@
 }
 .reg-join input {
   margin-bottom: 10%;
-  width: 200px;
+  width: 300px;
   padding: 14px;
   border: 1px solid purple;
-  background: transparent;
+  background: #fff;
   border-radius: 5px;
-  color: #fff;
+  color: #000;
+  font-size: 18px;
 }
 .reg-btn {
   background-color: purple;
@@ -162,18 +163,21 @@
 }
 .order {
   display: flex;
+  width: 100%;
   margin: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 25px;
   font-size: 18px;
 }
 .order-sub {
+  width: 100%;
   text-align: center;
   justify-content: center;
 }
 .o1 {
   text-align: center;
   margin-bottom: 13px;
+  justify-content: center;
 }
 .order h1 {
   margin-bottom: 20px;
@@ -213,13 +217,19 @@
   text-decoration: none;
 }
 
-@media (max-width: 740px) {
-  .main {
-    height: 40vh;
+@media (max-width: 900px) {
+  .navabar_menu {
+    padding-left: 100px;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 790px) {
+  .main {
+    height: 40vh;
+  }
+  .reg-join input {
+    width: 500px;
+  }
   .navabar_menu {
     display: none;
     position: absolute;
@@ -242,6 +252,9 @@
     margin-top: 5px;
     z-index: 99;
   }
+}
+
+@media (max-width: 550px) {
   .main h1 {
     padding-left: 20px;
     font-size: 40px;
@@ -300,7 +313,10 @@
 }
 @media (max-width: 540px) {
   .side {
-    width: 200pxpx;
+    width: 200px;
+  }
+  .reg-join input {
+    width: 400px;
   }
 }
 @media (max-width: 440px) {
@@ -310,10 +326,16 @@
   .registration {
     width: 200px;
   }
+  .reg-join input {
+    width: 380px;
+  }
 }
 @media (max-width: 380px) {
   .ham {
     margin-left: 55%;
+  }
+  .reg-join input {
+    width: 350px;
   }
 }
 .footer {
@@ -413,4 +435,14 @@ span.text {
   margin: 10px 30px;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 350px) {
+  .reg-join input {
+    width: 280px;
+  }
+}
+@media (max-width: 290px) {
+  .reg-join input {
+    width: 250px;
+  }
 }
