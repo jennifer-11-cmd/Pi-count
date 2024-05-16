@@ -8,34 +8,110 @@
     <title>Dashboard</title>
     <style>
         body {
-            background-color: rgb(109, 8, 109);
+            /*background-color: rgb(109, 8, 109);*/
             height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            background-color: #333;
+            padding-top: 20px;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            display: block;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: #333;
         }
     </style>
 </head>
 
 <body>
-    <div class="sidebar">
-        <p id="value">Hello </p>
-        <div class="side">
-            <div class="logo-name">
-                <h1>Pi count</h1>
-            </div>
-            <div class="con">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="main.html">Order</a></li>
-                    <li><a href="Balance.html">Balance</a></li>
-                    <li><a href="withdraw.html">Withdraw</a></li>
-                    <li><a href="dashboard2.html">Advanced dashbord</a></li>
-                    <li><a href="referral.html">Referral</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="img">
-            <img src="">
-        </div>
 
+
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#order" onclick="openTab('order')">Order</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="Balance.html">Balance</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <li><a href="dashboard2.html">Advanced dashbord</a></li>
+            <li><a href="referral.html">Referral</a></li>
+
+        </ul>
+    </div>
+    <div class="content" id="order">
+        <h2>Order</h2>
+        <!-- Order content goes here -->
+        <div class="order" id="order">
+            <div class="order-sub">
+                <div class="o1">
+                    <h1>Order <br></h1>
+                    <p>Here we have only 3 order plan</p>
+                </div>
+                <div class="o2">
+                    <p>1. The 3,500 order plan</p>
+                    <p>2. The 10,500 order plan</p>
+                    <p>3. The 20,500 order plan</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="Order-price">
+            <div class="fivekprice">
+                <p>Puchase 3,500.00 plan</p>
+                <button><a href="fkpayment.html">Order Now</a></button>
+            </div>
+            <div class="tenkprice">
+                <p>purchase 10,500.00 plan</p>
+                <button><a href="tkpayment.html">Order Now</a></button>
+            </div>
+            <div class="twentykprice">
+                <p>purchase 20,500.00 plan</p>
+                <button><a href="twkpayment.html">Order Now</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="team">
+        <h2>Team</h2>
+        <!-- Team content goes here -->
+    </div>
+    <div class="content" id="referral">
+        <h2>Referral</h2>
+        <!-- Referral content goes here -->
+        <p>Start referring now to get amazing bonus</p>
+        <li><a href="#inivte">Invite link: https://picount.onrender.com/</a></li>
     </div>
 
 
@@ -43,8 +119,17 @@
 
 
 
-    <script src="main.js">
 
+
+    <script>
+        /*  function openTab(tabName) {
+              var i;
+              var x = document.getElementsByClassName("content");
+              for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "block"
+              }
+              document.getElementsByClassName("tabName").style.display = "bloc"
+          }*/
 
     </script>
 </body>

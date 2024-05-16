@@ -316,7 +316,7 @@
     width: 200px;
   }
   .reg-join input {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (max-width: 440px) {
@@ -326,16 +326,13 @@
   .registration {
     width: 200px;
   }
-  .reg-join input {
-    width: 380px;
-  }
 }
 @media (max-width: 380px) {
   .ham {
     margin-left: 55%;
   }
   .reg-join input {
-    width: 350px;
+    width: 270px;
   }
 }
 .footer {
@@ -435,14 +432,4 @@ span.text {
   margin: 10px 30px;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-}
-@media (max-width: 350px) {
-  .reg-join input {
-    width: 280px;
-  }
-}
-@media (max-width: 290px) {
-  .reg-join input {
-    width: 250px;
-  }
 }
